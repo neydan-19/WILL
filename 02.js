@@ -12,8 +12,16 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  const resultado = [];
+  let nuevoArray = strings.map(item => item.length).sort((a,b) => a-b);
+  let position = nuevoArray.indexOf(nuevoArray[nuevoArray.length - 1]);
+  let valorLength  = nuevoArray[position];
+  let elementoFinal = strings.find(element => element.length === valorLength);
+  resultado.push(elementoFinal);
+  return resultado;
 }
-
+const array = ['JavaScript', 'HTML', 'CSS'];
+console.log(stringMasLarga(array));
 // No modifiques nada debajo de esta linea //
 
 module.exports = stringMasLarga
