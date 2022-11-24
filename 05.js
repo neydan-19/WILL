@@ -18,8 +18,6 @@ function pluck(array, propiedad) {
    return array.map(item => item[propiedad]);
 }
 
-var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }];
-console.log(pluck(productos, 'name'));
 
 // No modifiques nada debajo de esta linea //
 

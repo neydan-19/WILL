@@ -19,8 +19,6 @@ function soloNumeros(array) {
   });
   return resultado;
 }
-var array = [1, 'Henry', 2, "Hans", 12];
-console.log(soloNumeros(array));
 
 // No modifiques nada debajo de esta linea //
 

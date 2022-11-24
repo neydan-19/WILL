@@ -20,8 +20,7 @@ function stringMasLarga(strings) {
   resultado.push(elementoFinal);
   return resultado;
 }
-const array = ['JavaScript', 'HTML', 'CSS'];
-console.log(stringMasLarga(array));
+
 // No modifiques nada debajo de esta linea //
 
 module.exports = stringMasLarga
